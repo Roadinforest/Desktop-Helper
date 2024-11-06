@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TallyBook</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="1">
+    <widget class="QLabel" name="Title">
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>13</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;</string>
+     </property>
+     <property name="text">
+      <string>记账本</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <layout class="QGridLayout" name="ExtraGrid">
+     <item row="1" column="1">
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="styleSheet">
+        <string notr="true">background-color:white
+
+</string>
+       </property>
+       <widget class="QWidget" name="PageShow">
+        <widget class="QLabel" name="NoticeNoBill">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>100</y>
+           <width>441</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>幼圆</family>
+           <pointsize>20</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="text">
+          <string>还没有账单记录哦，请先去添加吧</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>711</width>
+           <height>491</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="font">
+             <font>
+              <family>幼圆</family>
+              <pointsize>16</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <column>
+             <property name="text">
+              <string>日期</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>收支</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>金额</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>备注</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnClear">
+            <property name="font">
+             <font>
+              <family>幼圆</family>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <property name="text">
+             <string>清空</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="PageSta">
+        <widget class="QWidget" name="Blank" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>10</y>
+           <width>401</width>
+           <height>331</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>80</y>
+           <width>160</width>
+           <height>156</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="Title_8">
+            <property name="font">
+             <font>
+              <family>Brush Script MT</family>
+              <pointsize>20</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <property name="text">
+             <string>Statistics</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="PrintIn">
+            <property name="font">
+             <font>
+              <family>Brush Script MT</family>
+              <pointsize>20</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <property name="text">
+             <string>收入：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="PrintOut">
+            <property name="font">
+             <font>
+              <family>Brush Script MT</family>
+              <pointsize>20</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <property name="text">
+             <string>支出：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="PrintAll">
+            <property name="font">
+             <font>
+              <family>Brush Script MT</family>
+              <pointsize>20</pointsize>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black</string>
+            </property>
+            <property name="text">
+             <string>总计</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="ToSpline">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>290</y>
+           <width>301</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>幼圆</family>
+           <pointsize>14</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="text">
+          <string>查看本月过去七天账单趋势</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="PageSet">
+        <property name="styleSheet">
+         <string notr="true">background:transparent</string>
+        </property>
+        <widget class="QLabel" name="Title_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>121</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Brush Script MT</family>
+           <pointsize>28</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="text">
+          <string>Settings</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>90</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>幼圆</family>
+           <pointsize>16</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black;
+background-color:white;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>默认</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>金黄</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>苍色</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>群青</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>藤紫</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="Title_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>91</width>
+           <height>46</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>幼圆</family>
+           <pointsize>18</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="text">
+          <string>主题色</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Welcome">
+        <widget class="QLabel" name="Title_6">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>90</y>
+           <width>371</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Brush Script MT</family>
+           <pointsize>28</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="text">
+          <string>Welcome</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="PageAdd">
+        <property name="styleSheet">
+         <string notr="true">background:transparent</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>7</x>
+           <y>73</y>
+           <width>551</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="2">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QRadioButton" name="rbtnIn">
+                <property name="font">
+                 <font>
+                  <family>幼圆</family>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black</string>
+                </property>
+                <property name="text">
+                 <string>收入</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="rbtnOut">
+                <property name="font">
+                 <font>
+                  <family>幼圆</family>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black</string>
+                </property>
+                <property name="text">
+                 <string>支出</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEditNum">
+              <property name="font">
+               <font>
+                <family>Britannic Bold</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="Title_9">
+              <property name="font">
+               <font>
+                <family>幼圆</family>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string>备注：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEditNote">
+              <property name="font">
+               <font>
+                <family>Britannic Bold</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QPushButton" name="btnSave">
+              <property name="font">
+               <font>
+                <family>幼圆</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string>保存</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QDateEdit" name="dateEdit">
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QRadioButton" name="btnToday">
+                <property name="font">
+                 <font>
+                  <family>Brush Script MT</family>
+                  <pointsize>16</pointsize>
+                  <italic>true</italic>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black</string>
+                </property>
+                <property name="text">
+                 <string>Today</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="btnYesterday">
+                <property name="font">
+                 <font>
+                  <family>Brush Script MT</family>
+                  <pointsize>16</pointsize>
+                  <italic>true</italic>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black</string>
+                </property>
+                <property name="text">
+                 <string>Yesterday</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="btnChoose">
+                <property name="font">
+                 <font>
+                  <family>Brush Script MT</family>
+                  <pointsize>16</pointsize>
+                  <italic>true</italic>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:black</string>
+                </property>
+                <property name="text">
+                 <string>Choose a day</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="Title_10">
+              <property name="font">
+               <font>
+                <family>幼圆</family>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black;
+</string>
+              </property>
+              <property name="text">
+               <string>金额：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="Title_7">
+              <property name="font">
+               <font>
+                <family>幼圆</family>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string>添加账单</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="Title_5">
+              <property name="font">
+               <font>
+                <family>Brush Script MT</family>
+                <pointsize>20</pointsize>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="LuckyPig">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="TodayTime">
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>16</pointsize>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:black</string>
+              </property>
+              <property name="text">
+               <string>Today Time</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="Lcd"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="MenuLayout">
+     <item>
+      <widget class="QLabel" name="UserHead">
+       <property name="styleSheet">
+        <string notr="true">color:black</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Add">
+       <property name="font">
+        <font>
+         <family>等线</family>
+         <pointsize>14</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:black;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Display">
+       <property name="font">
+        <font>
+         <family>等线</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:black;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>显示</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Statistics">
+       <property name="font">
+        <font>
+         <family>等线</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:black;
+background:transparent;
+
+</string>
+       </property>
+       <property name="text">
+        <string>统计</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Settings">
+       <property name="font">
+        <font>
+         <family>等线</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:black;
+background:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>设置</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Quit">
+       <property name="font">
+        <font>
+         <family>等线</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:black;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

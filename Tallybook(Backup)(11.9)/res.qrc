@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/Add.png</file>
+        <file>res/Modify.png</file>
+        <file>res/Note.png</file>
+        <file>res/Settings.png</file>
+        <file>res/Statistics.png</file>
+        <file>res/Quit.png</file>
+        <file>res/UserHead.png</file>
+        <file>res/background.png</file>
+        <file>res/background.jpg</file>
+        <file>res/LuckyPig.png</file>
+    </qresource>
+</RCC>

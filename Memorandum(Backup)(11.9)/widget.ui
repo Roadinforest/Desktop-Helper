@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>课程备忘录</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Memo-resource.qrc">
+    <normaloff>:/new/image/image/1.jpg</normaloff>:/new/image/image/1.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 190, 197);</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>961</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>803</x>
+     <y>70</y>
+     <width>161</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_course">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 190, 197);</string>
+      </property>
+      <property name="text">
+       <string>课程</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_homework">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 190, 197);</string>
+      </property>
+      <property name="text">
+       <string>作业</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_reminder">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 190, 197);</string>
+      </property>
+      <property name="text">
+       <string>提醒</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_setting">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 190, 197);</string>
+      </property>
+      <property name="text">
+       <string>设置</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_quit">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 190, 197);</string>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_EXP">
+   <property name="geometry">
+    <rect>
+     <x>843</x>
+     <y>20</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>EXP</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>0</y>
+     <width>791</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>方正舒体</family>
+     <pointsize>36</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Course Memo--课程备忘录</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>961</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_6">
+   <property name="geometry">
+    <rect>
+     <x>793</x>
+     <y>70</y>
+     <width>16</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="MainStacked">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>70</y>
+     <width>801</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="pageWelcome">
+    <widget class="QLabel" name="welcome">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>451</width>
+       <height>220</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+       <pointsize>48</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;Welcome to&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;Vkun‘s Memo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>5</y>
+       <width>220</width>
+       <height>220</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/new/image/image/Vkun_Sqt.jpg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="forgive">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>681</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Script</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>All doubts arising from the use of this application</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="forgive_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>320</y>
+       <width>531</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Script</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>must come from the developer's mistake.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="forgive_3">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>400</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Script</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>--Vkun_s</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageCourse">
+    <widget class="QLabel" name="label_Table">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;课程表&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="CourseStacked">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>791</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="CStable">
+      <widget class="QTableWidget" name="CourseTable">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>731</width>
+         <height>421</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="CSadd">
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>160</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程名称</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>老师名称</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>教室</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>学分</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>10</y>
+         <width>160</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>星期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>开始节数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>结束结束</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>备注</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="csnameedit">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="teachedit">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>80</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="roomedit">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>150</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="scoreedit">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>220</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Xedit">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>10</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Y1edit">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>80</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Y2edit">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>150</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="savecourse">
+       <property name="geometry">
+        <rect>
+         <x>315</x>
+         <y>400</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="noteedit">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>220</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>510</y>
+       <width>661</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="btn_showCourseTable">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>展示</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_addcourse">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_change">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>删改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>sort（test）</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageHomework">
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;作业&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="HomeworkStacked">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>791</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(245, 190, 197);</string>
+     </property>
+     <widget class="QWidget" name="showHW">
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>0</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;记录&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="HomeworkTable_1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>741</width>
+         <height>420</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-top-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="rowCount">
+        <number>0</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>课程</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>内容</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>截止时间</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>重要程度</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>提交方式</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>完成状态</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="AddHW">
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>0</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;添加&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>137</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="hwname">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwcontent">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>作业内容：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwddl">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>截止时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwsubmission">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>提交方式：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwlevel">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>重要程度</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwstatus">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>完成状态</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="nameedit">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>60</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="contentedit">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>120</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QDateTimeEdit" name="DDL">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>190</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QFrame" name="levelframe">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>320</y>
+         <width>461</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QRadioButton" name="level">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>重要</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="level_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>一般</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="level_3">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>不重要</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="levelhide">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RadioButton</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="statusframe">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>380</y>
+         <width>461</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QRadioButton" name="status">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>未完成</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="status_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>已完成</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="statushide">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>10</y>
+          <width>97</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RadioButton</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="savehomework">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>430</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="conameps">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>60</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>（建议不超四字）</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cocontentps">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>130</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>（建议不超十一字）</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cosubps">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>250</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>（建议不超六字）、</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="mustname">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>70</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>必填</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="mustcomtent">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>130</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>必填</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="submissionedit">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>252</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>510</y>
+       <width>661</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_showHW_2">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>展示</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_addHW_2">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_changeHW_2">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>删改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>sort（test）</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <zorder>btn_changeHW_2</zorder>
+     <zorder>btn_showHW_2</zorder>
+     <zorder>btn_addHW_2</zorder>
+     <zorder>pushButton_3</zorder>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageRemind">
+    <widget class="QLabel" name="label_Table_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;教学活动提醒&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>500</y>
+       <width>661</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="btn_showAC_3">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>展示</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_addAC_3">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_changeAC_3">
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>删改</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QStackedWidget" name="RemindStacked">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>801</width>
+       <height>460</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="remindshow">
+      <widget class="QTableWidget" name="RemindTable">
+       <property name="geometry">
+        <rect>
+         <x>59</x>
+         <y>20</y>
+         <width>679</width>
+         <height>410</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>组织方</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>教学活动内容</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>时间</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="remindadd">
+      <widget class="QTextEdit" name="activity">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>220</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QDateTimeEdit" name="appointtime">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>350</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>164</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="hwname_2">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>组织方</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwcontent_2">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>教学活动内容</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hwddl_2">
+          <property name="font">
+           <font>
+            <family>华文行楷</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>时间</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="organizer">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>90</y>
+         <width>291</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;添加&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="saveremind">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>410</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文行楷</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageSetting">
+    <widget class="QLabel" name="label_Table_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f5bec5;&quot;&gt;设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Memo-resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
